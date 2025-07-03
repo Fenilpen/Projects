@@ -14,4 +14,17 @@ document.addEventListener('DOMContentLoaded', ()=>{
        if(!city) return;
 
     })
+
+    function fetchWeatherData(city){
+        
+    }
+
+    function displayWeatherData(){
+        
+    }
+
+    function showError(){
+        weatherInfo.classList.add('hidden');
+        errorMessage.classList.remove('hidden')
+    }
 })
