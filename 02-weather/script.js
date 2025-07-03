@@ -6,4 +6,12 @@ document.addEventListener('DOMContentLoaded', ()=>{
     const tempratureDisplay = document.getElementById('temprature')
     const descriptionDisplay = document.getElementById('description')
     const errorMessage = document.getElementById('error-massage')
+
+    const API_KEY = "045bc7ded105cd1d503784d8a38011f4"   //env varriables
+
+    getWeatherBtn.addEventListener('click',() => {
+       const city = cityInput.value.trim()
+       if(!city) return;
+
+    })
 })
