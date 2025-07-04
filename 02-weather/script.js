@@ -49,3 +49,19 @@ document.addEventListener('DOMContentLoaded', ()=>{
 //     })
 
 // }
+
+// old method 
+
+// testing()
+//     .then((done)=>{
+//     console.log(done);
+//     return `hi this is new massage`    
+// })
+//     .then((newe)=>{
+//         console.log(newe);
+//     })
+//     .catch((failed)=>{
+//         console.log(failed);
+//     })
+
+
