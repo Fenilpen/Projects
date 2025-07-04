@@ -36,3 +36,16 @@ document.addEventListener('DOMContentLoaded', ()=>{
         
     }
 })
+
+// here is the example of promise since we are about to use promise
+
+// function testing() {
+//    return new Promise((resolve,reject) => {
+//         setTimeout(()=>{
+//             let test = true
+//             if (test) resolve("testing done successfully");
+//             else reject("test failed");
+//         },4000)
+//     })
+
+// }
