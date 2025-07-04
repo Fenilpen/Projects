@@ -13,6 +13,13 @@ document.addEventListener('DOMContentLoaded', ()=>{
        const city = cityInput.value.trim()
        if(!city) return;
 
+        try {
+            const weatherData = await fetchWeatherData(city)
+            displayWeatherData (weatherData)
+       } catch (error) {
+            showError()
+       }
+
     })
 
     function fetchWeatherData(city){
@@ -26,5 +33,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
     function showError(){
         weatherInfo.classList.add('hidden');
         errorMessage.classList.remove('hidden')
+        
     }
 })
