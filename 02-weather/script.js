@@ -64,4 +64,18 @@ document.addEventListener('DOMContentLoaded', ()=>{
 //         console.log(failed);
 //     })
 
+// new method
+
+// async function tested() {
+//     try {
+//         console.log("i am in try");
+//         const getting = await testing()
+//         console.log("here its done,",getting);
+        
+//     } catch (error) {
+//         console.log("i am in error",error);
+//     }
+// }
+
+// tested()
 
