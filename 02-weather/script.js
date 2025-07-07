@@ -27,6 +27,12 @@ document.addEventListener('DOMContentLoaded', ()=>{
         const response = await fetch(url)
         console.log(typeof response);
         console.log("RESPONSE",response);
+
+        if(!response.ok) {
+            throw new Error("City Not Found");
+        }
+        let data = await response.json()
+        return data
     }
 
     function displayWeatherData(){
