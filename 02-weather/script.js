@@ -34,8 +34,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
     }
 
     function showError(){
-        weatherInfo.classList.add('hidden');
         errorMessage.classList.remove('hidden')
+        weatherInfo.classList.add('hidden');
         
     }
 })
