@@ -30,7 +30,15 @@ document.addEventListener('DOMContentLoaded', ()=>{
     }
 
     function displayWeatherData(){
+        console.log(data);
+        const {name,main,weather} = data  
+        cityNameDisplay.textContent = name    
         
+        //unlock the display
+        weatherInfo.classList.remove('hidden')
+        errorMessage.classList.add('hidden')
+        tempratureDisplay.textContent = `Temperature : ${main.temp}`
+        descriptionDisplay.textContent = `Weather : ${weather[0].description}`
     }
 
     function showError(){
