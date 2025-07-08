@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     const API_KEY = "045bc7ded105cd1d503784d8a38011f4"   //env varriables
 
-    getWeatherBtn.addEventListener('click',() => {
+    getWeatherBtn.addEventListener('click',async () => {
        const city = cityInput.value.trim()
        if(!city) return;
 
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         return data
     }
 
-    function displayWeatherData(){
+    function displayWeatherData(data){
         console.log(data);
         const {name,main,weather} = data  
         cityNameDisplay.textContent = name    
