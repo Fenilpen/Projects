@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     })
 
-    function fetchWeatherData(city){
+    async function fetchWeatherData(city){
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${API_KEY}`    
         const response = await fetch(url)
         console.log(typeof response);
@@ -38,11 +38,12 @@ document.addEventListener('DOMContentLoaded', ()=>{
     function displayWeatherData(data){
         console.log(data);
         const {name,main,weather} = data  
-        cityNameDisplay.textContent = name    
         
         //unlock the display
         weatherInfo.classList.remove('hidden')
         errorMessage.classList.add('hidden')
+        
+        cityNameDisplay.textContent = name    
         tempratureDisplay.textContent = `Temperature : ${main.temp}`
         descriptionDisplay.textContent = `Weather : ${weather[0].description}`
     }
@@ -53,6 +54,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
         
     }
 })
+
+// Use async on any function where you're going to use await inside it, 
+// Or if you want the function to always return a Promise.
 
 // here is the example of promise since we are about to use promise
 
