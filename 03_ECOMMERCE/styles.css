@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    /* height: 100vh; */
+    /* width: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cart-items{
+    background-color: #72af2c;
+    border-radius: 3px;
+    padding: 12px;
+}
+
+.items{
+    background-color: #137ac9;
+    margin: 15px;
+    border-radius: 12px;
+}
+
+.oi{
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 15px;
+}
