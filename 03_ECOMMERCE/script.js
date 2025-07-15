@@ -9,6 +9,9 @@ document.addEventListener('DOMContentLoaded',()=>{
     const productList = document.getElementById('product-list');
     const cartItems = document.getElementById('cart-items');
     const emptyCartMessage = document.getElementById('empty-cart');
+    const cartTotalMessage = document.getElementById('cart-total')
+    const totalPriceDisplay = document.getElementById('total-price')
+    const checkoutBtn = document.getElementById('checkout-btn')
 
     products.forEach((product)=>{
         const productDiv = document.createElement('div')
