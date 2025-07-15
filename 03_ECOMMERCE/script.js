@@ -10,4 +10,11 @@ document.addEventListener('DOMContentLoaded',()=>{
     const cartItems = document.getElementById('cart-items');
     const emptyCartMessage = document.getElementById('empty-cart');
 
+    products.forEach((product)=>{
+        const productDiv = document.createElement('div')
+        productDiv.classList.add('product')
+        productDiv.innerHTML = `<span> ${product.name} - ${product.price.toFixed(2)}</span>
+        <button data-id = "${product.id}"> Add to cart </button>
+        `;
+        
 })
