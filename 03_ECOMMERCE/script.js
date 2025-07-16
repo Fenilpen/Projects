@@ -21,4 +21,10 @@ document.addEventListener('DOMContentLoaded',()=>{
         `;
         productList.appendChild(productDiv)
         })
+
+    productList.addEventListener('click',(e)=>{
+        if(e.target.tagName === "BUTTON"){
+            
+        }
+    })
 })
