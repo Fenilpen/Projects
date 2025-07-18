@@ -32,7 +32,12 @@ document.addEventListener('DOMContentLoaded',()=>{
     
     function addToCart(product){
         cart.push(product)
-        console.log(cart);
+        renderCart()
+    }
+
+    function renderCart (){
+        cartItems.innerHTML = "";
+        let totalPrice = 0
     }
     
 })
