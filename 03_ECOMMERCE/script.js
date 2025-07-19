@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded',()=>{
                 const cartItem = document.createElement('div')
                 cartItem.innerHTML = `${item.name} -$ ${item.price.toFixed(2)}`
                 cartItems.appendChild(cartItem)
-                totalPriceDisplay.innerHTML = ``
+                totalPriceDisplay.innerHTML = `Total : ${totalPrice}`
             })
         }else {
             emptyCartMessage.classList.remove('hidden')
