@@ -53,5 +53,12 @@ document.addEventListener('DOMContentLoaded',()=>{
             emptyCartMessage.classList.remove('hidden')
         }
     }
+
+    checkoutBtn.addEventListener("click",()=>{
+        cart.length = 0
+        totalPriceDisplay.textContent = `$0.00`
+        alert("Check out successfully")
+        renderCart()
+    })
     
 })
