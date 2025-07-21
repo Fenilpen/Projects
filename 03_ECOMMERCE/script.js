@@ -55,10 +55,15 @@ document.addEventListener('DOMContentLoaded',()=>{
     }
 
     checkoutBtn.addEventListener("click",()=>{
+        if(!cart.length){
+            alert("Please add items to checkout")
+        }
+        else {
         cart.length = 0
         totalPriceDisplay.textContent = `$0.00`
         alert("Check out successfully")
-        renderCart()
+        renderCart() 
+        }
     })
     
 })
