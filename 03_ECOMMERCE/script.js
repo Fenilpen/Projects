@@ -71,5 +71,18 @@ document.addEventListener('DOMContentLoaded',()=>{
         renderCart() 
         }
     })
+
+        cartItems.addEventListener("click", (e) => {
+    if (e.target.classList.contains("removeBtn")) {
+        const itemDiv = e.target.parentElement;
+        const itemName = itemDiv.firstChild.textContent.split(" -$")[0].trim();
+        // Remove from cart array
+        const index = cart.findIndex(item => item.name === itemName);
+        if (index > -1) {
+            cart.splice(index, 1);
+            renderCart();
+        }
+    }
+});
     
 })
