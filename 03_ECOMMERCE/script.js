@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded',()=>{
     const cartTotalMessage = document.getElementById('cart-total')
     const totalPriceDisplay = document.getElementById('total-price')
     const checkoutBtn = document.getElementById('checkout-btn')
+    const Removee = document.getElementsByClassName('removeBtn')
+
 
     products.forEach((product)=>{
         const productDiv = document.createElement('div')
