@@ -46,7 +46,11 @@ document.addEventListener('DOMContentLoaded',()=>{
                 totalPrice += item.price
                 const cartItem = document.createElement('div')
                 cartItem.innerHTML = `${item.name} -$ ${item.price.toFixed(2)}`
+                let btn = document.createElement('button')
+                btn.classList.add('removeBtn')
+                btn.textContent = "Remove"
                 cartItems.appendChild(cartItem)
+                cartItem.appendChild(btn)
                 totalPriceDisplay.textContent = `${totalPrice.toFixed(2)}`
             })
         }else {
