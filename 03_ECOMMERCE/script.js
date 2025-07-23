@@ -86,3 +86,17 @@ document.addEventListener('DOMContentLoaded',()=>{
 });
     
 })
+
+
+// i am using splice and slice mehod to perform tasks 
+// here is what it is
+
+// 🪓 .splice() — modifies the original array
+// - Purpose: Add, remove, or replace elements in an array.
+// - Mutates original array: Yes ✔️
+// - Returns: An array of removed elements.
+
+// ✂️ .slice() — copies part of the array
+// - Purpose: Create a shallow copy of a portion of the array.
+// - Mutates original array: No ❌
+// - Returns: A new array with the sliced elements.
