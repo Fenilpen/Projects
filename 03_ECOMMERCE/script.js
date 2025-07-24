@@ -118,9 +118,15 @@ document.addEventListener('DOMContentLoaded',()=>{
 //     console.log("error encountred");
 // }
 
-
-
 // ✂️ .slice() — copies part of the array
 // - Purpose: Create a shallow copy of a portion of the array.
 // - Mutates original array: No ❌
 // - Returns: A new array with the sliced elements.
+
+// simple example using findIndex method
+// let myName = "fenil"
+// let store = [1,4,66,"fenil",66,"Samsung",56]
+
+// let result = store.findIndex((item) => item === myName)
+
+// console.log("result here",result);
