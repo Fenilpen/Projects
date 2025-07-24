@@ -96,6 +96,15 @@ document.addEventListener('DOMContentLoaded',()=>{
 // - Mutates original array: Yes ✔️
 // - Returns: An array of removed elements.
 
+// simple example to replace using splice
+
+// let arr = [3,4,5,6,7,8]
+// let res = arr.splice(0,1,"P")
+// console.log(res);
+// console.log(arr);
+
+
+
 // ✂️ .slice() — copies part of the array
 // - Purpose: Create a shallow copy of a portion of the array.
 // - Mutates original array: No ❌
