@@ -103,6 +103,21 @@ document.addEventListener('DOMContentLoaded',()=>{
 // console.log(res);
 // console.log(arr);
 
+// detailed example using findindex and splice
+
+// let splitArray = "sdvfdb @  dasfvfd @ feregty"
+// let splited = splitArray.split("@")
+// console.log("old splited",splited);
+
+// let find = splited.findIndex((i) => i === "  dasfvfd ")
+// console.log("find",find);
+// if (find > -1) {
+//     let res = splited.splice(find,1)
+//     console.log("here is the modified splited",splited);
+// }else{
+//     console.log("error encountred");
+// }
+
 
 
 // ✂️ .slice() — copies part of the array
