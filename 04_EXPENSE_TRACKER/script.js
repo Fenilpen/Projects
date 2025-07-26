@@ -6,6 +6,24 @@
     <title>Expense Tracker</title>
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Expanse tracker</h1>
+        <form id="expense-form">
+            <input 
+            type="text" 
+            id="expense-name" 
+            placeholder="Expense Name"
+            required >
+            
+            <input type="number" 
+            id="expense-amount" 
+            placeholder="Amount" 
+            required >
+
+            <button type="submit">
+                Add Expense
+            </button>
+        </form>
+    </div>
 </body>
 </html>
