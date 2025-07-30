@@ -51,6 +51,14 @@ function updateTotal(){
 
   function renderExpenses () {
     expenseList.innerHTML = ""
+    expenses.forEach(expense => {
+        let li = document.createElement('li')
+        li.innerHTML = `${expense.name} - $ ${expense.amount}
+        <button data-id ="${expense.id}">Delete</button>`;
+        expenseList.appendChild(li)
+        console.log(li);
+        
+    })
     
 }
   
