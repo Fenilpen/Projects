@@ -6,7 +6,8 @@ let expenseAmount = document.getElementById("expense-amount")
 let expenseList = document.getElementById("expense-list")
 let totalAmountDisplay = document.getElementById("total-amount")
 
-let expenses = []
+let expenses = JSON.parse(localStorage.getItem("expenses")) || []
+let totalAmount = calculateTotal()
   
 expenseForm.addEventListener("submit",(e)=>{
     e.preventDefault()
