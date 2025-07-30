@@ -23,6 +23,10 @@ expenseForm.addEventListener("submit",(e)=>{
         expenses.push(newExpense)
         saveExpensesToLocal()
         renderDisplay(expenses)
+        updateTotal()
+
+        expenseName.value = ""
+        expenseAmount.value = ""
         
 
     }else {
@@ -30,5 +34,9 @@ expenseForm.addEventListener("submit",(e)=>{
     }
     
 })
+
+  function saveExpensesToLocal(){
+    localStorage.setItem("expenses",JSON.stringify(expenses))
+}
   
 }
