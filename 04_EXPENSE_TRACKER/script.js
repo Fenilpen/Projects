@@ -48,5 +48,10 @@ function updateTotal(){
     totalAmount = calculateTotal()
     totalAmountDisplay.textContent = totalAmount.toFixed(2)
 }
-  
+
+  function renderExpenses () {
+    expenseList.innerHTML = ""
+    
 }
+  
+})
