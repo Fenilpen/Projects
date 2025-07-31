@@ -61,5 +61,15 @@ function updateTotal(){
     })
     
 }
+
+  expenseList.addEventListener("click",(e)=>{
+    if(e.target.tagName ===  "BUTTON"){
+        const id = Number(e.target.getAttribute("data-id"));        
+        
+        
+        
+    }
+    
+})
   
 })
