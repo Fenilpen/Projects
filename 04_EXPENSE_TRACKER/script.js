@@ -70,7 +70,12 @@ function updateTotal(){
             return value.id === id
         })
         
-        
+        if (result > -1) {
+            expenses.splice(result, 1);
+            renderExpenses();
+            updateTotal()
+            saveExpensesToLocal()
+        }
         
     }
     
