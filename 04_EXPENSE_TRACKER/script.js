@@ -66,6 +66,10 @@ function updateTotal(){
     if(e.target.tagName ===  "BUTTON"){
         const id = Number(e.target.getAttribute("data-id"));        
         
+        let result = expenses.findIndex((value,index,obj)=> {
+            return value.id === id
+        })
+        
         
         
     }
