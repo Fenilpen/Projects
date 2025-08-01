@@ -65,17 +65,20 @@ function updateTotal(){
   expenseList.addEventListener("click",(e)=>{
     if(e.target.tagName ===  "BUTTON"){
         const id = Number(e.target.getAttribute("data-id"));        
+        expenses = expenses.filter(expense => expense.id !== id)
+
+        // Alternative way to remove an expense by finding its index
+      
+        // let result = expenses.findIndex((value,index,obj)=> {
+        //     return value.id === id
+        // })
         
-        let result = expenses.findIndex((value,index,obj)=> {
-            return value.id === id
-        })
-        
-        if (result > -1) {
-            expenses.splice(result, 1);
+        // if (result > -1) {
+        //     expenses.splice(result, 1);
+        // }
             renderExpenses();
             updateTotal()
             saveExpensesToLocal()
-        }
         
     }
     
