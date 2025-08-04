@@ -26,3 +26,23 @@ start.addEventListener("click",()=>{
     `
     Qusbox.appendChild(First)
 })
+
+Qusbox.addEventListener("click",(e)=>{    
+    if(e.target.tagName === "BUTTON"){
+        let find = e.target.parentElement.children
+        
+        for(let i = 0; i <= find.length; i++){
+            if(find[i].checked){
+            
+                if(find[i].value === "Delhi"){
+                    console.log("true");
+                    
+                }
+                // console.log(find[i].value);
+            }
+        }
+        console.log(e);
+        
+        
+    }
+})
