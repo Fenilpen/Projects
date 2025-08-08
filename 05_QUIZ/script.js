@@ -12,7 +12,11 @@ document.addEventListener("DOMContentLoaded",()=>{
       choices: ["Mars","Venus","Jupiter","Saturn"],
       answer: "Mars"
     },
-    {}
+    {
+      question: "Who wrote 'Hemlet'?",
+      choices: ["charles dickens","Jane Austen","William Shakespeare","Mark Twain"],
+      answer: "William Shakespeare"
+    }
   ] 
 
 
