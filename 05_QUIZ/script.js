@@ -1,5 +1,10 @@
 document.addEventListener("DOMContentLoaded",()=>{
 
+  const startBtn = document.getElementById("start-btn")
+  const nextBtn = document.getElementById("next-btn")
+  const restartBtn = document.getElementById("restart-btn")
+  const questionContainer = document.getElementById("question-container")
+
   const questions = [
 
     {
