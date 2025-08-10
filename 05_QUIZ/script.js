@@ -4,6 +4,10 @@ document.addEventListener("DOMContentLoaded",()=>{
   const nextBtn = document.getElementById("next-btn")
   const restartBtn = document.getElementById("restart-btn")
   const questionContainer = document.getElementById("question-container")
+  const questiontext = document.getElementById("question-text")
+  const choicesList = document.getElementById("choices-list")
+  const resultContainer = document.getElementById("result-container") 
+
 
   const questions = [
 
