@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded",()=>{
   ] 
 
 
-
+    let currentQustionIndex = 0
+    let score = 0
   
 }
