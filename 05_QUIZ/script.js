@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded",()=>{
   const questiontext = document.getElementById("question-text")
   const choicesList = document.getElementById("choices-list")
   const resultContainer = document.getElementById("result-container") 
+  const scoreDisplay = document.getElementById('score')
 
 
   const questions = [
