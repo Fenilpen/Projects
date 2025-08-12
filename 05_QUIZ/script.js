@@ -41,5 +41,17 @@ document.addEventListener("DOMContentLoaded",()=>{
         questionContainer.classList.remove('hidden')
         showQuestion()
     }
+
+  function showQuestion(){
+        nextBtn.classList.add('hidden')
+        questiontext.textContent = questions[currentQustionIndex].question;
+        choicesList.innerHTML = ""; // clear previous choices
+        questions[currentQustionIndex].choices.forEach( choice => {
+            const li = document.createElement('li')
+            li.textContent = choice
+            li.addEventListener('click',() => selectAnswer(choice))
+            choicesList.appendChild(li)
+        })
+    }
   
 }
