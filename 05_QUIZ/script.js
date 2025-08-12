@@ -35,6 +35,15 @@ document.addEventListener("DOMContentLoaded",()=>{
 
   startBtn.addEventListener('click',startQuiz)
 
+  nextBtn.addEventListener('click',()=> {
+        currentQustionIndex++
+        if(currentQustionIndex < questions.length){
+            showQuestion()
+        }else {
+            showResult()
+        }
+    })
+
     function startQuiz() {
         startBtn.classList.add('hidden');
         resultContainer.classList.add('hidden')
