@@ -53,5 +53,13 @@ document.addEventListener("DOMContentLoaded",()=>{
             choicesList.appendChild(li)
         })
     }
-  
+
+  function selectAnswer(choice) {
+        const correctAnswer = questions[currentQustionIndex].answer
+        if(choice === correctAnswer){
+            score++
+        }
+        
+        nextBtn.classList.remove('hidden');
+    }
 }
