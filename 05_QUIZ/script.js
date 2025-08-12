@@ -44,6 +44,13 @@ document.addEventListener("DOMContentLoaded",()=>{
         }
     })
 
+  restartBtn.addEventListener("click",()=>{
+        currentQustionIndex = 0
+        score = 0
+        resultContainer.classList.add('hidden')
+        startQuiz()
+    })
+
     function startQuiz() {
         startBtn.classList.add('hidden');
         resultContainer.classList.add('hidden')
