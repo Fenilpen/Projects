@@ -46,21 +46,12 @@ h1{
     justify-content: center;
 }
 
-
-
-.hidden{
-    display: none;
-}
-
-/* #choices-list{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-} */
-
 button{
     padding: 9px;
     margin: 6px;
     font-size: 14px;
+}
+
+.hidden{
+    display: none;
 }
