@@ -56,3 +56,7 @@ button{
 .hidden{
     display: none;
 }
+
+button:hover{
+    background-color: #fff;
+}
