@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded",()=>{
 
     let currentQustionIndex = 0
     let score = 0
+    let answered = false 
 
   startBtn.addEventListener('click',startQuiz)
 
@@ -62,6 +63,7 @@ document.addEventListener("DOMContentLoaded",()=>{
         nextBtn.classList.add('hidden')
         questiontext.textContent = questions[currentQustionIndex].question;
         choicesList.innerHTML = ""; // clear previous choices
+        answered = false;
         questions[currentQustionIndex].choices.forEach( choice => {
             const li = document.createElement('li')
             li.textContent = choice
@@ -71,6 +73,9 @@ document.addEventListener("DOMContentLoaded",()=>{
     }
 
   function selectAnswer(choice) {
+    if (answered) return;
+        answered = true;
+    
         const correctAnswer = questions[currentQustionIndex].answer
         if(choice === correctAnswer){
             score++
